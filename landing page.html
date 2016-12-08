@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mountain Sports</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body {
+            font: 20px Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #f5f6f7;
+            }
+            p {font-size: 16px;}
+            .margin {margin-bottom: 45px;}
+            .bg-1 { 
+            background-color: #1abc9c; /* Green */
+            color: #ffffff;
+            }
+            .bg-2 { 
+            background-color: #474e5d; /* Dark Blue */
+            color: #ffffff;
+            }
+            .bg-3 { 
+            background-color: #ffffff; /* White */
+            color: #555555;
+            }
+            .bg-4 { 
+            background-color: #2f2f2f; /* Black Gray */
+            color: #fff;
+            }
+            .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            }
+            .navbar {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 0;
+            border-radius: 0;
+            margin-bottom: 0;
+            font-size: 12px;
+            letter-spacing: 5px;
+            }
+            .navbar-nav  li a:hover {
+            color: #1abc9c !important;
+            }
+        </style>
+        <script>
+
+        function animarRolagem(campoDestino){
+            var container = $('body'),
+                scrollTo = $(campoDestino);
+
+            container.animate({
+                scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+            });
+        }
+
+        </script>
+    </head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"> <img src="img/logo-mountain-sports.jpg" class="img-responsive" style="display:inline" alt="Mountain Sports" width="350" height="350"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a onclick="animarRolagem('#contato')" style="cursor: pointer;">Contato</a></li>
+        <li><a onclick="animarRolagem('#cadastro')" style="cursor: pointer;">Cadastre-se</a></li>
+        <li><a onclick="animarRolagem('#mais-vendidos')" style="cursor: pointer;">Mais vendidos</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center" id="contato">
+  <h3 class="margin">Contato</h3>
+  <img src="img/banner-mountain-sports.jpg" class="img-responsive" style="display:inline" alt="Mountain Sports" width="900" height="550">
+  <h3>Também temos o e-mail: contato@mountain-sports.com.br</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center" id="cadastro">
+  <h3 class="margin">Faça seu cadastro</h3>
+  <p>Cadastre-se com o seu Facebook ou Gmail e ganhe 30% de desconto na primeira compra  </p>
+  <img src="img/botao-login-social-facebook.png" class="img-responsive margin" style="display:inline" width="240" height="120" alt="Image">
+  <img src="img/image02.png" class="img-responsive margin" style="display:inline" width="220" height="120" alt="Image">
+
+	
+   </div>
+
+<div class="container-fluid bg-3 text-center" id="mais-vendidos">    
+  <h3 class="margin">Mais vendidos</h3><br>
+  <div class="row">
+    <div class="col-sm-4">	 
+      <img src="img/3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+		<p>Nome:  Camiseta Desimpedidos Encompetência</p>	
+		<p>Gênero:  Masculino </p>	
+		<p>Indicado para: Dia a Dia </p>	
+		<p>Clube: Sem Clube </p>	
+		<p>Time: Sem Time</p>	
+		<p>Material: Algodão</p>
+	</div>
+    <div class="col-sm-4"> 
+      <img src="img/1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+		 <p>Nome:  Camiseta Desimpedidos Chuteira Preta Respect</p>	
+		<p>Gênero:  Masculino </p>	
+		<p>Indicado para: Dia a Dia </p>	
+		<p>Clube: Sem Clube </p>	
+		<p>Time: Sem Time</p>	
+		<p>Material: Algodão</p>	
+	</div>
+    <div class="col-sm-4"> 
+      <img src="img/2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      	 <p>Nome:  Camiseta Desimpedidos Zueira Sem Limites</p>	
+		<p>Gênero:  Masculino </p>	
+		<p>Indicado para: Dia a Dia </p>	
+		<p>Clube: Sem Clube </p>	
+		<p>Time: Sem Time</p>	
+		<p>Material: Algodão</p>
+	</div>
+  </div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+    <p>Fernanda Kondrat    </p>
+    <p>Gabriel Montanher   </p>
+    <p>Guilherme Golfetto  </p>
+    <p>Gleibson Douglas    </p>
+    <p>Vinicius França     </p>
+</footer>
+
+</body>
+</html>
